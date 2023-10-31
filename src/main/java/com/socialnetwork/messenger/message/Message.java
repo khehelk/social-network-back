@@ -28,9 +28,11 @@ public class Message {
     private String images;
     @NonNull
     private Date createDate;
+    @NonNull
     private Boolean isEdited;
     @ManyToOne
     @JoinColumn(name = "user_id")
+    @NonNull
     private User creator;
     @ManyToOne
     @JoinColumn(name = "parent_message_id")
