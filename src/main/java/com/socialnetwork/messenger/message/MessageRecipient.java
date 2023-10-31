@@ -1,7 +1,8 @@
-package com.socialnetwork.model.messenger.message;
+package com.socialnetwork.messenger.message;
 
-import com.socialnetwork.model.messenger.chat.ChatUsers;
-import com.socialnetwork.model.user.User;
+import com.socialnetwork.messenger.chat.ChatUsers;
+import com.socialnetwork.user.User;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;

@@ -1,4 +1,4 @@
-package com.socialnetwork.model.user;
+package com.socialnetwork.user;
 
 import java.util.Date;
 import jakarta.persistence.Entity;
