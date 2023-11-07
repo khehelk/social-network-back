@@ -23,6 +23,7 @@ public class MessageRecipient {
     @Id
     @GeneratedValue
     private Long id;
+    @NonNull
     private Boolean isReaded;
     @ManyToOne    
     @JoinColumn(name = "message_id")

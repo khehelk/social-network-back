@@ -9,11 +9,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@RequiredArgsConstructor
 @Table(name="tbl_user")
 public class User {
     @Id    
@@ -31,4 +33,20 @@ public class User {
     private String profileImage;
     @NonNull
     private Date createDate;
+
+    public User(
+        String name,
+        String surname,
+        Date birthday,
+        String email,
+        String password,
+        Date creatDate
+    ){
+        this.name = name;
+        this.surname = surname;
+        this.birthday = birthday;
+        this.email = email;
+        this.password = password;
+        this.createDate = creatDate;
+    }
 }

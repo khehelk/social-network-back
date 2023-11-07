@@ -1,0 +1,20 @@
+spring:
+    main:
+        banner-mode: off
+    jpa:
+        hibernate:
+            ddl-auto: update            
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                "[format_sql]": true
+                jdbc:
+                    "[lob.non_contextual_creation]": true
+            show-sql: true
+    datasource:
+        url: jdbc:postgresql://localhost:5432/socialnetwork_db
+        driver-class-name: org.postgresql.Driver
+        username: postgres
+        password: 123
+myapp:
+    storagePath: C:/social-network-storage    
