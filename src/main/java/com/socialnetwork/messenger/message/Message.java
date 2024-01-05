@@ -1,19 +1,13 @@
 package com.socialnetwork.messenger.message;
 
-import java.util.Date;
-
 import com.socialnetwork.user.User;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+
+import java.util.Date;
 
 @Entity
 @Data
@@ -22,7 +16,7 @@ import lombok.NonNull;
 @Table(name="tbl_message")
 public class Message {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
     private String images;

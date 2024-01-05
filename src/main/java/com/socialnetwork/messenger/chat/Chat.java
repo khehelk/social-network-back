@@ -1,14 +1,12 @@
 package com.socialnetwork.messenger.chat;
 
-import java.util.Date;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+
+import java.util.Date;
 
 @Entity
 @Data
@@ -17,7 +15,7 @@ import lombok.NonNull;
 @Table(name="tbl_chat")
 public class Chat {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NonNull
     private String name;

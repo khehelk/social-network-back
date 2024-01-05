@@ -9,6 +9,5 @@ public record UserDTO(
     String email,
     String password,
     Date birthday,
-    Date createDate,
-    String profileImage
+    Date createDate
 ){}
