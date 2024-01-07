@@ -16,5 +16,10 @@ spring:
         driver-class-name: org.postgresql.Driver
         username: postgres
         password: 123
+    max-http-header-size: 50MB
+    servlet:
+        multipart.max-file-size: 500MB
+        multipart.max-request-size: 500MB
 myapp:
     storagePath: C:/social-network-storage    
+

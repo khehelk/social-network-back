@@ -1,5 +1,9 @@
-package com.socialnetwork.user;
+package com.socialnetwork.controller;
 
+import com.socialnetwork.dto.UserDTO;
+import com.socialnetwork.dto.UserRegistrationDTO;
+import com.socialnetwork.service.UserService;
+import com.socialnetwork.dto.UserUpdateDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;

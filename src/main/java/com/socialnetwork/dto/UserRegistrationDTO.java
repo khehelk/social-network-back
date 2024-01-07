@@ -1,13 +1,12 @@
-package com.socialnetwork.user;
+package com.socialnetwork.dto;
 
 import java.util.Date;
 
-public record UserDTO(
-    Long id,
+public record UserRegistrationDTO(
     String name,
     String surname,
+    Date birthday,
     String email,
     String password,
-    Date birthday,
     Date createDate
 ){}

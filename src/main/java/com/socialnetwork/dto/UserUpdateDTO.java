@@ -1,4 +1,4 @@
-package com.socialnetwork.user;
+package com.socialnetwork.dto;
 
 import java.util.Date;
 

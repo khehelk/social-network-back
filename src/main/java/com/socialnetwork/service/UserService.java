@@ -1,5 +1,11 @@
-package com.socialnetwork.user;
+package com.socialnetwork.service;
 
+import com.socialnetwork.dto.UserDTO;
+import com.socialnetwork.dto.UserRegistrationDTO;
+import com.socialnetwork.model.User;
+import com.socialnetwork.repository.UserRepository;
+import com.socialnetwork.dto.UserUpdateDTO;
+import com.socialnetwork.util.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.PageRequest;

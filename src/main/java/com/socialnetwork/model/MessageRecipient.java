@@ -1,7 +1,5 @@
-package com.socialnetwork.messenger.message;
+package com.socialnetwork.model;
 
-import com.socialnetwork.messenger.chat.ChatUsers;
-import com.socialnetwork.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.socialnetwork.messenger.message;
+package com.socialnetwork.dto;
 
 import org.springframework.web.multipart.MultipartFile;
 

@@ -1,4 +1,4 @@
-package com.socialnetwork.messenger.chat;
+package com.socialnetwork.dto;
 
 public record ChatDTO(
     Long id,
